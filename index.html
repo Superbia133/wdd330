@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sleep Outside</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <!-- Dynamically insert header -->
+  <div id="header-container"></div>
+
+  <!-- Your main content would go here -->
+
+  <!-- Fetch and insert header -->
+  <script>
+    fetch("partials/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+  </script>
+
+  <!-- Cart badge logic -->
+  <script src="scripts/cart.js" defer></script>
+</body>
+</html>

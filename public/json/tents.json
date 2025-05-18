@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "880RR",
+    "Brand": "Marmot",
+    "Name": "Ajax 3",
+    "Image": "/images/marmot-ajax-3.jpg",
+    "FinalPrice": 129.99,
+    "Description": "A lightweight, easy-to-assemble 3-person tent with exceptional ventilation and waterproofing."
+  },
+  {
+    "Id": "123XY",
+    "Brand": "North Face",
+    "Name": "Alpine 3",
+    "Image": "/images/northface-alpine-3.jpg",
+    "FinalPrice": 159.99,
+    "Description": "Built for alpine adventures, this tent handles cold weather and heavy wind with ease."
+  },
+  {
+    "Id": "456ZP",
+    "Brand": "Cedar Ridge",
+    "Name": "Rimrock 2",
+    "Image": "/images/cedar-ridge-rimrock-2.jpg",
+    "FinalPrice": 89.99,
+    "Description": "A budget-friendly tent perfect for casual weekend camping trips with a friend."
+  }
+]

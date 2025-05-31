@@ -1,5 +1,5 @@
 import { setupProductSearch } from "./productSearch.mjs";
-import { getLocalStorage, setLocalStorage } from "./utils.mjs";
+import { getLocalStorage, setLocalStorage, getCartItemCount } from "./utils.mjs";
 
 // Mock product data - in real usage, fetch from JSON or API
 const products = [
@@ -18,8 +18,13 @@ renderProductList(products);
 // Setup product search feature
 setupProductSearch();
 
+// Update the cart item count in the icon
+updateCartCount();
+
 function renderProductList(products) {
   const productList = document.querySelector(".product-list");
+  if (!productList) return;
+
   productList.innerHTML = "";
 
   products.forEach(product => {
@@ -30,4 +35,12 @@ function renderProductList(products) {
     `;
     productList.appendChild(item);
   });
+}
+
+function updateCartCount() {
+  const count = getCartItemCount();
+  const cartIcon = document.querySelector(".cart-count");
+  if (cartIcon) {
+    cartIcon.textContent = count > 0 ? count : "";
+  }
 }
